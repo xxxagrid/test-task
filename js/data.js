@@ -1,5 +1,4 @@
-'use strict'
-const people = [
+export default [
     {
       name: "Ruby Sharpe",
       email: "tortor@aol.net"
@@ -40,24 +39,4 @@ const people = [
       name: "Rashad Bates",
       email: "enim.etiam.imperdiet@google.edu"
     }
-];
-
-const peopleBlock = document.querySelector('.people');
-const list = document.querySelector(".list");
-const activePerson = document.querySelector(".active");
-
-let id, li, person;
-
-people.forEach((person) => {
-    li = document.createElement('li');
-    li.innerText = person.name;
-    li.setAttribute('id', person.email)
-    list.appendChild(li);
-});
-
-const showPeopleEmail = (e) => {
-    activePerson.innerText = e.target.id;
-}
-
-peopleBlock.addEventListener('click', showPeopleEmail);
-
+  ]
